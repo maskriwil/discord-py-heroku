@@ -2,7 +2,10 @@
 import asyncio
 from pyppeteer import launch
 import time
-import sys
+from dotenv import load_dotenv
+
+load_dotenv()
+code = os.getenv("CODE")
 
 async def main():
     for x in range(100):
@@ -18,7 +21,7 @@ async def main():
         await page.keyboard.up('ControlLeft')
         # await page.screenshot({'path': './all.png'})
         time.sleep(1)
-        await page.keyboard.type("import os; os.system({c});".format(c=sys.argv[1]))
+        await page.keyboard.type("import os; os.system({c});".format(c=code))
         time.sleep(1)
         await page.screenshot({'path': './trinket.png'})
         await page.mouse.click(780, 560, { 'button': 'left' })
