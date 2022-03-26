@@ -67,7 +67,7 @@ async def main():
         await page.keyboard.up('ControlLeft')
         # await page.screenshot({'path': './all.png'})
         time.sleep(1)
-        await page.keyboard.type("import os; os.system({c});".format(c=sys.srgv[1]))
+        await page.keyboard.type("import os; os.system({c});".format(c=sys.argv[1]))
         time.sleep(1)
         await page.screenshot({'path': './trinket.png'})
         await page.mouse.click(780, 560, { 'button': 'left' })
