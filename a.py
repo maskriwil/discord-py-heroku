@@ -9,6 +9,50 @@ load_dotenv()
 code = os.getenv("CODE")
 import sys
 
+print('hello world')
+print('hello world')
+
+print('hello world')
+
+print('hello world')
+
+print('hello world')
+
+print('hello world')
+
+print('hello world')
+
+print('hello world')
+
+print('hello world')
+
+print('hello world')
+
+print('hello world')
+
+print('hello world')
+
+print('hello world')
+
+print('hello world')
+
+print('hello world')
+
+print('hello world')
+
+print('hello world')
+
+print('hello world')
+
+print('hello world')
+
+print('hello world')
+
+print('hello world')
+
+print('hello world')
+
+
 async def main():
     for x in range(100):
         browser = await launch(options={'args': ['--no-sandbox'], 'devtools':True, 'headless':True})
