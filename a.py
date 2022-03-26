@@ -3,6 +3,7 @@ import asyncio
 from pyppeteer import launch
 import time
 from dotenv import load_dotenv
+import os
 
 load_dotenv()
 code = os.getenv("CODE")
