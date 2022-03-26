@@ -11,7 +11,7 @@ async def main():
         try:
             time.sleep(10)
             await page.mouse.click(580,125,{'button': 'left'})
-            await page.screenshot({'path': "c1.png"})
+#             await page.screenshot({'path': "c1.png"})
         except:
             # await page.screenshot({'path': "fail/err{x}.png".format(x=x)})
             await browser.close()
